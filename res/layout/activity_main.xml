@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474f"
+    tools:context="com.konka.lee.gponsetting.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp" >
+
+        <Button
+            android:id="@+id/btn_menu_1"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_menu_bg"
+            android:text="@string/menu_title_devicestate"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_menu_2"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_menu_bg"
+            android:text="@string/menu_title_wifistate"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_menu_3"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_menu_bg"
+            android:textColor="#000000"
+            android:text="@string/menu_title_tool"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_menu_4"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_menu_bg"
+            android:text="@string/menu_title_other"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_menu_link"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout_menu"
+        android:background="#ffffff" />
+ 	<include
+        android:id="@+id/layout_device_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout_menu_link"
+        layout="@layout/layout_device_state"
+        android:visibility="visible" />
+    <include
+        android:id="@+id/layout_wifi_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout_menu_link"
+        layout="@layout/layout_wifi_state"
+        android:visibility="gone" />
+	<include
+        android:id="@+id/layout_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout_menu_link"
+        layout="@layout/layout_tool"
+        android:visibility="gone" />
+   <include
+        android:id="@+id/layout_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout_menu_link"
+        layout="@layout/layout_other"
+        android:visibility="gone" />
+
+</RelativeLayout>

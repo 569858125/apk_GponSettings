@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+ 		<Button
+            android:id="@+id/btn_ping"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_menu_bg"
+            android:text="@string/gpon_setting_setping"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/input_ping_path"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="8.8.8.8"
+            android:text="8.8.8.8"
+            android:textColor="#ffffff" />
+		<EditText 
+		    android:id="@+id/input_ping_wanindex"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:hint="1"
+            android:text="1"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#ffffff" 
+		    />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+ 		<Button
+            android:id="@+id/btn_tracert"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_menu_bg"
+            android:text="@string/gpon_setting_settracert"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/input_path"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="125.20.84.53"
+            android:text="125.20.84.53"
+            android:textColor="#ffffff" />
+		<EditText 
+		    android:id="@+id/input_tracert_wanindex"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:hint="1"
+            android:text="1"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#ffffff" 
+		    />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    >
+	            <Button
+	                android:id="@+id/btn_getwan"
+	                android:layout_width="100dp"
+	                android:layout_height="50dp"
+	                android:background="@drawable/btn_menu_bg"
+	                android:text="@string/gpon_setting_getwan"
+	                android:textColor="#000000" />
+	            <EditText 
+				    android:id="@+id/input_wanindex"
+		            android:layout_width="50dp"
+		            android:layout_height="50dp"
+		            android:hint="1"
+		            android:text="1"
+		            android:gravity="center"
+		            android:lines="1"
+		            android:maxLines="1"
+		            android:inputType="number"
+		            android:maxLength="1"
+		            android:textColor="#ffffff" 
+		    	/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_getpon"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_menu_bg"
+                android:text="@string/gpon_setting_getpon"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_getvoip"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_menu_bg"
+                android:text="@string/gpon_setting_voip"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="310dp"
+            android:layout_height="200dp" >
+
+            <TextView
+                android:id="@+id/tv_path_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

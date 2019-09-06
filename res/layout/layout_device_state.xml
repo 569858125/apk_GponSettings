@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_name"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_name"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_mode"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_mode"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_ottversion"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_ott_version"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_hwver"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_hwver"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_swver"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_swver"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_devmac"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_devmac"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_gponsn"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_gponsn"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/device_info_time"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_devinfo_runtime"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

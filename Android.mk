@@ -1,0 +1,37 @@
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_STATIC_JAVA_LIBRARIES := libgson libokhttp libokio
+LOCAL_PROGUARD_FLAG_FILES := proguard.cfg
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_SRC_FILES := $(call all-subdir-java-files)
+
+LOCAL_PACKAGE_NAME := GPONSetting
+LOCAL_DEX_PREOPT := false
+
+LOCAL_CERTIFICATE := platform
+
+LOCAL_PRIVATE_PLATFORM_APIS := true
+include $(BUILD_PACKAGE)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libgson:libs/gson-2.2.4.jar
+include $(BUILD_MULTI_PREBUILT)
+include $(CLEAR_VARS)
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libokhttp:libs/okhttp-3.2.0.jar
+include $(BUILD_MULTI_PREBUILT)
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libokio:libs/okio-1.9.0.jar
+include $(BUILD_MULTI_PREBUILT)
+include $(CLEAR_VARS)
+#LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libgson:libs/gson-2.2.4.jar \
+#    libokhttp:libs/okhttp-3.2.0.jar \
+#    libokio:libs/okio-1.9.0.jar 
+
+#include $(BUILD_MULTI_PREBUILT)
+
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
